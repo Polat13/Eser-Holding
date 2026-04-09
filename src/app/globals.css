@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html {
+  /* scroll-behavior: smooth; -> SİLİNDİ (Lenis ile çakışır) */
+  overscroll-behavior: none; /* Sayfa sonundaki 'zıplama' efektini engeller */
+}
+
+body {
+  background: #F8F8F8;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin: 0; 
+}
+
+/* Container sistemimiz */
+.container-custom {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  background: #1E3A8A;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  /* transition silindi, JS ile daha akıcı olacak */
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: 10000;
+  pointer-events: none;
+}
