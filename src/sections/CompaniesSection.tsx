@@ -69,7 +69,7 @@ export default function CompaniesSection() {
                     {t(`items.${item.key}`)}
                   </h3>
                   <Link href={item.route}>
-                    <button className="px-3 py-2 border border-white/30 bg-black/20 backdrop-blur-md text-white rounded-full hover:bg-white hover:text-black transition-all duration-300 font-medium w-fit flex items-center gap-2 text-sm cursor-pointer">
+                    <button className="px-2.5 py-1.5 border border-white/30 bg-black/20 backdrop-blur-md text-white rounded-full hover:bg-white hover:text-black transition-all duration-300 font-medium w-fit flex items-center gap-1.5 text-xs cursor-pointer">
                       {t("button")}
                       <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </button>
