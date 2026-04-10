@@ -16,12 +16,31 @@
   "projects": "PROJECTS",
   "vision": "VISION",
   "about": "ABOUT US",
-  "contact": "Contact Us"
+  "press": "IN THE PRESS",
+  "contact": "Contact Us",
+  "explore": "explore->"
 },
   "About": {
     "title": "About Our Holding",
     "description": "As Eser Investment Holding Inc., our fundamental policy is based on honesty and quality. Furthermore, when designing our projects, we take care to include many features that will add comfort, privilege, and value to your life. What matters to us is the trust provided by the spaces where you will live with your family and children.",
     "imageAlt": "About Eser Investment Holding Image"
+  },
+  "Press": {
+    "title": "In the Press",
+    "subtitle": "Eser Holding in Media Coverage",
+    "motto": "Transparent and Reliable Communication.",
+    "news1": {
+      "title": "Eser Holding Chairman Yalçın Bayrak: We Work for Sustainable Development",
+      "summary": "Eser Investment Holding Inc. Chairman Yalçın Bayrak made important statements about the investments they carry out in line with their sustainable development goals. Bayrak emphasized the importance their holding, operating in construction, automotive, textile and energy sectors, attaches to environmentally friendly and social responsibility projects.",
+      "button": "Read News",
+      "url": "https://www.haberler.com/advertorial/eser-holding-yonetim-kurulu-baskani-yalcin-bayrak-12567157-haberi/"
+    },
+    "news2": {
+      "title": "Behçet Bayrak Continues His Investments",
+      "summary": "Behçet Bayrak, one of the important names of Eser Holding, continues his new investments to contribute to the Turkish economy. Bayrak, who attracts attention with his projects in the construction sector and his work in the automotive field, continues his efforts uninterruptedly to achieve employment creation and regional development goals.",
+      "button": "Read News",
+      "url": "https://www.sondakika.com/sponsorlu-icerik/haber-behcet-bayrak-yatirimlarina-devam-ediyor-11263540/"
+    }
   },
   "Sectors": {
     "title": "Our Sectors",
@@ -48,7 +67,7 @@
     "phoneTitle": "Phone",
     "emailTitle": "Email",
     "addressTitle": "Address",
-    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yuzyil Bagcilar / Istanbul"
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yuzyil Bagcilar / Istanbul\n\nTorba Mahallesi Riza Anter Caddesi No:37 Bodrum/Mugla"
   },
   "History": {
     "title": "Our History",

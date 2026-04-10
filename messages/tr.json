@@ -16,12 +16,31 @@
   "projects": "PROJELER",
   "vision": "VİZYON",
   "about": "HAKKIMIZDA",
-  "contact": "Bize Ulaşın"
+  "press": "BASINDA BİZ",
+  "contact": "Bize Ulaşın",
+  "explore": "incele->"
 },
   "About": {
     "title": "Holdingimiz Hakkında",
     "description": "Eser Yatırım Holding A.Ş. olarak temel politikamız dürüstlük ve kalite esasına dayanmaktadır. Ayrıca projelerimizi tasarlarken hayatınıza; konfor, ayrıcalık ve kazanç katacak bir çok özelliğin olmasına özen gösteriyoruz. Bizim için önemli olan aileniz ve çocuklarınızla yaşayacağınız alanların güven vermesidir.",
     "imageAlt": "Eser Yatırım Holding Hakkında Görsel"
+  },
+  "Press": {
+    "title": "Basında Biz",
+    "subtitle": "Medya Kapsamında Eser Holding",
+    "motto": "Şeffaf ve Güvenilir İletişim.",
+    "news1": {
+      "title": "Eser Holding Yönetim Kurulu Başkanı Yalçın Bayrak: Sürdürülebilir Kalkınma İçin Çalışıyoruz",
+      "summary": "Eser Yatırım Holding A.Ş. Yönetim Kurulu Başkanı Yalçın Bayrak, şirketlerinin sürdürülebilir kalkınma hedefleri doğrultusunda gerçekleştirdikleri yatırımlar hakkında önemli açıklamalarda bulundu. Bayrak, inşaat, otomotiv, tekstil ve enerji sektörlerinde faaliyet gösteren holdinglerinin, çevre dostu ve sosyal sorumluluk projelerine verdiği önemi vurguladı.",
+      "button": "Habere Git",
+      "url": "https://www.haberler.com/advertorial/eser-holding-yonetim-kurulu-baskani-yalcin-bayrak-12567157-haberi/"
+    },
+    "news2": {
+      "title": "Behçet Bayrak Yatırımlarına Devam Ediyor",
+      "summary": "Eser Holding'in önemli isimlerinden Behçet Bayrak, Türkiye ekonomisine katkı sağlamak amacıyla yeni yatırımlarını sürdürüyor. İnşaat sektöründeki projeleri ve otomotiv alanındaki çalışmaları ile dikkat çeken Bayrak, istihdam yaratma ve bölgesel kalkınma hedeflerine ulaşmak için çalışmalarını aralıksız sürdürüyor.",
+      "button": "Habere Git",
+      "url": "https://www.sondakika.com/sponsorlu-icerik/haber-behcet-bayrak-yatirimlarina-devam-ediyor-11263540/"
+    }
   },
   "Sectors": {
     "title": "Sektörlerimiz",
@@ -48,7 +67,7 @@
     "phoneTitle": "Telefon",
     "emailTitle": "E-Posta",
     "addressTitle": "Adres",
-    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yüzyıl Bağcılar / İstanbul"
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yüzyıl Bağcılar / İstanbul\n\nTorba Mahallesi Rıza Anter Caddesi No:37 Bodrum/Muğla"
   },
   "History": {
     "title": "Tarihçemiz",

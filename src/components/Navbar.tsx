@@ -94,6 +94,7 @@ export default function Navbar() {
     { id: "projects", name: t("projects"), href: `/${locale}/projects`, hasSub: false },
     { id: "vision", name: t("vision"), href: `/${locale}/vision`, hasSub: false },
     { id: "about", name: t("about"), href: `/${locale}/about`, hasSub: false },
+    { id: "press", name: t("press"), href: `/${locale}/press`, hasSub: false },
   ];
 
   return (
@@ -134,9 +135,10 @@ export default function Navbar() {
                         <Link
                           key={sIdx}
                           href={sub.href}
-                          className="px-4 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-blue-600 transition-colors border-b border-gray-50 last:border-none text-center"
+                          className="px-4 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-blue-600 transition-colors border-b border-gray-50 last:border-none flex items-center justify-between"
                         >
-                          {sub.name}
+                          <span>{sub.name}</span>
+                          <span className="text-sm text-gray-500">{t("explore")}</span>
                         </Link>
                       ))}
                     </div>
@@ -223,9 +225,10 @@ export default function Navbar() {
                           key={sIdx}
                           href={sub.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="text-lg sm:text-xl text-gray-300 font-medium hover:text-white hover:translate-x-2 transition-all"
+                          className="text-lg sm:text-xl text-gray-300 font-medium hover:text-white hover:translate-x-2 transition-all flex items-center justify-between"
                         >
-                          {sub.name}
+                          <span>{sub.name}</span>
+                          <span className="text-base text-gray-400">{t("explore")}</span>
                         </Link>
                       ))}
                     </div>
