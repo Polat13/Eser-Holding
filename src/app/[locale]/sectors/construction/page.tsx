@@ -2,10 +2,13 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { fadeUp } from "@/animations/fadeUp"; // Animasyon dosyanın yolunu kontrol et
 
 export default function ConstructionPage() {
+  const locale = useLocale();
   const t = useTranslations("Construction");
 
   useEffect(() => {
@@ -69,6 +72,14 @@ export default function ConstructionPage() {
               <p>
                 {t("p2")}
               </p>
+
+              <div className="pt-6">
+                <Link href={`/${locale}/projects`}>
+                  <button className="px-6 py-3 rounded-full bg-[#1E3A8A] text-white font-medium text-sm hover:bg-[#152c5f] transition-colors duration-300 cursor-pointer">
+                    {t("projectsButton")}
+                  </button>
+                </Link>
+              </div>
 
               {/* Vurucu Kapanış Kutusu */}
               <div className="p-8 bg-slate-50 rounded-2xl border border-gray-100 shadow-sm">

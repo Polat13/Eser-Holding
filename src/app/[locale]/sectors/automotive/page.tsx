@@ -3,7 +3,20 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { SiAudi, SiBmw, SiVolvo, SiFord } from "react-icons/si";
+import { TbBrandMercedes } from "react-icons/tb";
 import { fadeUp } from "@/animations/fadeUp"; // Animasyon dosyanın yolunu kontrol et
+
+// Kod tekrarını önlemek ve şeridi uzatmak için markaları bir bileşen yaptık
+const BrandIcons = () => (
+  <>
+    <TbBrandMercedes className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    <SiAudi className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    <SiBmw className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    <SiVolvo className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    <SiFord className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+  </>
+);
 
 export default function AutomotivePage() {
   const t = useTranslations("Automotive");
@@ -36,7 +49,53 @@ export default function AutomotivePage() {
           </h1>
           <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
         </div>
+
+        {/* LOGO BANDI (KUSURSUZ AKAN MARQUEE) */}
+        <div className="absolute bottom-6 left-1/2 z-10 w-full max-w-5xl -translate-x-1/2 px-4 overflow-hidden">
+          {/* Siyah kapsayıcı kutu (overflow-hidden burada çalışır, logolar bu sınırda kaybolur) */}
+          <div className="mx-auto flex h-[64px] items-center  text-white text-4xl  overflow-hidden">
+            
+            <div className="marquee flex items-center">
+              
+              {/* 1. SET: Şeridi siyahlıktan çok daha uzun yapmak için ikon setini 3 kez yan yana koyduk */}
+              {/* Uyarı: gap (boşluk) ve pr (sağ boşluk) değerleri zıplama olmaması için BİREBİR AYNI olmalıdır! */}
+              <div className="flex items-center gap-20 md:gap-32 pr-20 md:pr-32">
+                <BrandIcons />
+                <BrandIcons />
+                <BrandIcons />
+              </div>
+
+              {/* 2. SET: Döngünün bitmemesi için 1. setin birebir kopyası */}
+              <div className="flex items-center gap-20 md:gap-32 pr-20 md:pr-32">
+                <BrandIcons />
+                <BrandIcons />
+                <BrandIcons />
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </section>
+
+      {/* MARQUEE ANİMASYON CSS'İ */}
+      <style jsx>{`
+        .marquee {
+          width: max-content;
+          /* Süreyi düşürerek hızı artırdık. İkon aralıkları çok geniş olduğu için oldukça tempolu akacaktır */
+          animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+          /* Animasyon -50'den başlayıp 0'a gidiyor, böylece soldan doğup sağa akıyor */
+          from {
+            transform: translateX(-50%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+      `}</style>
 
       {/* 2. İÇERİK ALANI */}
       <section className="w-full py-20 md:py-32">
@@ -69,6 +128,36 @@ export default function AutomotivePage() {
               <p>
                 {t("p2")}
               </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+                <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                  <Image
+                    src="/images/araba1.jpg"
+                    alt="Araba 1"
+                    fill
+                    className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                    quality={90}
+                  />
+                </div>
+                <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                  <Image
+                    src="/images/araba2.jpg"
+                    alt="Araba 2"
+                    fill
+                    className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                    quality={90}
+                  />
+                </div>
+                <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                  <Image
+                    src="/images/araba3.jpg"
+                    alt="Araba 3"
+                    fill
+                    className="object-cover object-bottom group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                    quality={90}
+                  />
+                </div>
+              </div>
 
               {/* Vurucu Kapanış Kutusu */}
               <div className="p-8 bg-slate-50 rounded-2xl border border-gray-100 shadow-sm mt-4">
