@@ -2,29 +2,36 @@
 
 import { useEffect } from "react";
 import Image from "next/image"; 
+import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { fadeUp } from "@/animations/fadeUp"; // Kendi dosya yoluna göre ayarla!
 
 export default function CompaniesSection() {
   const t = useTranslations("Sectors");
+  const locale = useLocale();
 
   // 1. Enerji sektörünü diziye ekledik
   const sectors = [
     { 
       key: "construction", 
-      img: "/images/insaat.jpg" 
+      img: "/images/insaat.jpg",
+      route: `/${locale}/sectors/construction`
     },
     { 
       key: "automotive", 
-      img: "/images/otomotiv.jpg" 
+      img: "/images/otomotiv.jpg",
+      route: `/${locale}/sectors/automotive`
     },
     { 
       key: "textile", 
-      img: "/images/tekstil.jpg" 
+      img: "/images/tekstil.jpg",
+      route: `/${locale}/sectors/textile`
     },
     { 
       key: "energy", 
-      img: "/images/enerji.jpg" // Yeni görsel
+      img: "/images/enerji.jpg", // Yeni görsel
+      route: `/${locale}/sectors/energy`
     }
   ];
 
@@ -57,9 +64,17 @@ export default function CompaniesSection() {
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6 z-10">
-                <h3 className="text-2xl font-medium text-white group-hover:-translate-y-2 transition-transform duration-300">
-                  {t(`items.${item.key}`)}
-                </h3>
+                <div className="flex flex-wrap items-center justify-between gap-3 w-full">
+                  <h3 className="text-2xl font-medium text-white group-hover:-translate-y-2 transition-transform duration-300">
+                    {t(`items.${item.key}`)}
+                  </h3>
+                  <Link href={item.route}>
+                    <button className="px-3 py-2 border border-white/30 bg-black/20 backdrop-blur-md text-white rounded-full hover:bg-white hover:text-black transition-all duration-300 font-medium w-fit flex items-center gap-2 text-sm cursor-pointer">
+                      {t("button")}
+                      <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    </button>
+                  </Link>
+                </div>
               </div>
               
             </div>

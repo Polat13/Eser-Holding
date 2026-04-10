@@ -120,7 +120,7 @@ export default function FooterSection() {
                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
               <YoutubeIcon className="text-gray-400 hover:text-white" />
             </a>
-            <a href="https://twitter.com/eseryatirim" target="_blank" rel="noopener noreferrer" 
+            <a href="https://x.com/EserHolding" target="_blank" rel="noopener noreferrer" 
                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
               <TwitterIcon className="text-gray-400 hover:text-white" />
             </a>

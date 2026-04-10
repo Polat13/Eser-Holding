@@ -44,6 +44,7 @@
   },
   "Sectors": {
     "title": "Sektörlerimiz",
+    "button": "Daha Fazla",
     "items": {
       "construction": "İnşaat",
       "automotive": "Otomotiv",
