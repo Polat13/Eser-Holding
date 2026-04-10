@@ -59,7 +59,8 @@
   "Stats": {
     "projects": "Project",
     "countries": "Country",
-    "employees": "Employee"
+    "employees": "Employee",
+    "automotive": "Automotive"
   },
   "Footer": {
     "copyright": "Copyright © 2026 <company>Eser Yatırım Holding</company> All Rights Reserved.",

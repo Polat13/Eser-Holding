@@ -15,9 +15,10 @@ export default function StatsSection() {
 
   // Verilerimizi bir diziye aldık, böylece kod tekrarından kurtulduk
   const statsData = [
-    { targetNum: 500, suffix: "+", key: "projects" },
-    { targetNum: 20, suffix: "", key: "countries" },
-    { targetNum: 2000, suffix: "+", key: "employees" }
+    { targetNum: 755, suffix: "+", key: "projects" },
+    { targetNum: 16, suffix: "", key: "countries" },
+    { targetNum: 2400, suffix: "+", key: "employees" },
+    { targetNum: 810, suffix: "+", key: "automotive" }
   ];
 
   useEffect(() => {
@@ -75,7 +76,7 @@ export default function StatsSection() {
 
   return (
     <section ref={sectionRef} className="w-full py-32 bg-[#0f1f3f] stats-container">
-      <div className="container-custom grid md:grid-cols-3 gap-20 text-center">
+      <div className="container-custom grid md:grid-cols-4 gap-20 text-center">
         
         {/* Dizideki verileri dönüyoruz */}
         {statsData.map((item, index) => (
