@@ -1,7 +1,9 @@
 "use client"
 
-import { useEffect } from "react";
-import Image from "next/image"; // Next.js Image eklendi
+import { useEffect, useRef } from "react";
+import Image from "next/image"; 
+// 1. Çeviri kütüphanesini içeri aktarıyoruz
+import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,42 +12,54 @@ if (typeof window !== "undefined") {
 }
 
 export default function ParallaxSection() {
+  // 2. JSON'dan "Parallax" objesini çekiyoruz
+  const t = useTranslations("Parallax");
+  
+  // React'te GSAP için her zaman useRef kullanmak en güvenlisidir
+  const sectionRef = useRef(null); 
+
   useEffect(() => {
-    // ease: "none" eklemek parallax efektinin fare tekerleğiyle birebir 
-    // eşzamanlı (gecikmesiz) çalışmasını sağlar, daha pürüzsüz durur.
-    gsap.to(".parallax-image", { 
-      y: -120, 
-      ease: "none", 
-      scrollTrigger: { 
-        trigger: ".parallax-section", 
-        start: "top bottom", 
-        end: "bottom top", 
-        scrub: true 
-      } 
-    });
-  }, []);
+    // 3. Animasyonu Context içine alıyoruz ki dil değiştiğinde silebilelim
+    let ctx = gsap.context(() => {
+      
+      gsap.to(".parallax-image", { 
+        y: -120, 
+        ease: "none", 
+        scrollTrigger: { 
+          trigger: ".parallax-section", 
+          start: "top bottom", 
+          end: "bottom top", 
+          scrub: true 
+        } 
+      });
+
+    }, sectionRef); // Bu context sadece bu sectionRef içindeki classları etkiler
+
+    // 4. Dil değiştiğinde eski ScrollTrigger hesaplamasını çöpe at
+    return () => ctx.revert();
+    
+  }, [t]); // "t" değiştiğinde (dil değiştiğinde) useEffect baştan çalışır
 
   return (
-    <section className="parallax-section w-full h-[600px] relative overflow-hidden">
+    // sectionRef'i ana kapsayıcıya verdik
+    <section ref={sectionRef} className="parallax-section w-full h-[600px] relative overflow-hidden">
       
-      {/* Parallax Wrapper: Resim %120 boyunda yapılır ve -%10 yukarı çekilir.
-        GSAP bu div'i aşağı yukarı hareket ettirerek efekti yaratır.
-      */}
       <div className="parallax-image absolute top-[-10%] left-0 w-full h-[120%]">
         <Image 
-          src="/images/insaat.jpg" // Lokal inşaat fotoğrafımız
-          alt="Eser Yatırım Holding - Geleceğe Daha Yakın" 
+          src="/images/insaat.jpg" 
+          // 5. SEO (alt) metnini dinamik yaptık
+          alt={t("imageAlt")} 
           fill 
-          sizes="100vw" // Tam ekran genişliği için optimize eder
+          sizes="100vw" 
           className="object-cover" 
         />
       </div>
 
-      {/* Siyah Karartma (Overlay) ve İçerik */}
       <div className="absolute inset-0 bg-black/40 flex items-center">
         <div className="container-custom">
+          {/* 6. Başlığı dinamik yaptık */}
           <h2 className="text-5xl font-semibold text-white max-w-2xl">
-            Geleceğe Daha Yakın
+            {t("title")}
           </h2>
         </div>
       </div>

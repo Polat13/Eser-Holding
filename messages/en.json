@@ -1,0 +1,184 @@
+{
+  "Hero": {
+    "title": "Towards Sustainable Tomorrows",
+    "description": "As Eser Investment Holding, within the framework of our responsibility and with a customer-oriented approach, we aim to pave the way for continuous environmental, social, and economic improvement in every field we operate to create a much better tomorrow.",
+    "button": "Discover More"
+  },
+  "Navbar": {
+  "corporate": "CORPORATE",
+  "history": "History",
+  "mission": "Mission",
+  "sectors": "SECTORS",
+  "construction": "Construction",
+  "automotive": "Automotive",
+  "textile": "Textile",
+  "energy": "Energy",
+  "projects": "PROJECTS",
+  "vision": "VISION",
+  "about": "ABOUT US",
+  "contact": "Contact Us"
+},
+  "About": {
+    "title": "About Our Holding",
+    "description": "As Eser Investment Holding Inc., our fundamental policy is based on honesty and quality. Furthermore, when designing our projects, we take care to include many features that will add comfort, privilege, and value to your life. What matters to us is the trust provided by the spaces where you will live with your family and children.",
+    "imageAlt": "About Eser Investment Holding Image"
+  },
+  "Sectors": {
+    "title": "Our Sectors",
+    "items": {
+      "construction": "Construction",
+      "automotive": "Automotive",
+      "textile": "Textile",
+      "energy": "Energy"
+    }
+},
+"Parallax": {
+    "title": "Closer to the Future",
+    "imageAlt": "Eser Investment Holding - Closer to the Future"
+  },
+  "Stats": {
+    "projects": "Project",
+    "countries": "Country",
+    "employees": "Employee"
+  },
+  "Footer": {
+    "copyright": "Copyright © 2026 <company>Eser Yatırım Holding</company> All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "kvkk": "GDPR",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "addressTitle": "Address",
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yuzyil Bagcilar / Istanbul"
+  },
+  "History": {
+    "title": "Our History",
+    "subtitle": "Building the Future",
+    "motto": "Honesty, Quality, and Trust.",
+    "p1": "Operating in the construction, automotive, textile, and IT sectors, Eser Investment Holding Inc. has completed numerous luxury housing and business center projects since 1988.",
+    "p2": "As Eser Investment Holding Inc., our fundamental policy is based on honesty and quality. Furthermore, when designing our projects, we take care to include many features that will add comfort, privilege, and value to your life. What matters most to us is the trust provided by the spaces where you will live with your family and children.",
+    "p3": "Aiming to bring modern and useful living spaces to the sector with 100% domestic capital, Eser Investment Holding Inc. has signed many prestigious projects in Istanbul. A customer-oriented service approach and the ideal of establishing comfortable, environmentally friendly, safe, and peaceful living spaces that meet the expectations of modern city life are the indispensable principles of Eser Investment Holding Inc.",
+    "p4": "Standing behind every promise we make and delivering all the projects we build on time and exactly as promised is our greatest source of pride.",
+    "p5": "Acting with the principle of continuous innovation and healthy growth since its establishment, feeling the trust in the name of Eser Investment Holding Inc., and continuing to work and rise to always produce the best is the primary goal of our company."
+  },
+  "Mission": {
+    "title": "Our Mission",
+    "bigText": "FOCUS",
+    "subtitle": "Adding Value to the Future",
+    "motto": "Quality, Innovation, and Sustainability.",
+    "quote": "\"To create a much better tomorrow than today...\"",
+    "p1": "As Eser Investment Holding Inc., our mission is to continuously improve the quality of work, materials, and equipment used with a positive momentum through our modern working methods required by our age, qualified personnel selection, and training. We aim to uninterruptedly identify our customers' needs, respond in the best way, and help them focus their time and energy on their core activities.",
+    "p2": "Within the framework of our responsibility as Eser Investment Holding, with a customer-oriented approach, our goal is to lay the groundwork for continuous environmental, social, and economic improvement in every field we operate to create a much better tomorrow than today."
+  },
+  "Vision": {
+    "title": "Our Vision",
+    "bigText": "FUTURE",
+    "subtitle": "Innovative and Leading Approach",
+    "motto": "Continuous Improvement and Excellence.",
+    "p1": "As Eser Investment Holding Inc., our vision is to continuously improve the quality of work, materials, and equipment used with a positive momentum through our modern working methods required by our age, qualified personnel selection, and training. We aim to uninterruptedly identify our customers' needs, respond in the best way, and help them focus their time and energy on their core activities.",
+    "p2": "Within the framework of our responsibility as Eser Investment Holding, with a customer-oriented approach, our goal is to lay the groundwork for continuous environmental, social, and economic improvement in every field we operate to create a much better tomorrow than today.",
+    "quote": "\"To be a pioneer in the sector and permanent in the future...\""
+  },
+  "Automotive": {
+    "title": "Automotive",
+    "bigText": "TRUST",
+    "subtitle": "Innovative and Safe Solutions",
+    "motto": "Comfort, Privilege, and Quality.",
+    "p1": "As Eser Investment Holding Inc., our fundamental policy is based on honesty and quality. Furthermore, when designing our projects, we take care to include many features that will add comfort, privilege, and value to your life.",
+    "p2": "What matters most to us is the trust provided by the spaces where you will live with your family and children. By maintaining this fundamental principle in our automotive sector investments, we continue to provide services at the highest standards.",
+    "quote": "\"For you and your family to travel safely and securely...\""
+  },
+  "Textile": {
+    "title": "Textile",
+    "bigText": "QUALITY",
+    "subtitle": "Elegance and Superior Standards",
+    "motto": "Comfort, Privilege, and Trust.",
+    "p1": "As Eser Investment Holding Inc., our fundamental policy is based on honesty and quality. Furthermore, when designing our projects, we take care to include many features that will add comfort, privilege, and value to your life.",
+    "p2": "What matters most to us is the trust provided by the spaces where you will live with your family and children. With this approach in our textile sector activities, we aim to offer the healthiest and highest quality products.",
+    "quote": "\"Quality that touches every moment of your life...\""
+  },
+  "Construction": {
+    "title": "Construction",
+    "bigText": "FOUNDATION",
+    "subtitle": "Modern and Aesthetic Living Spaces",
+    "motto": "Durability, Aesthetics, and Trust.",
+    "p1": "As Eser Investment Holding Inc., our fundamental policy in the construction sector is based on honesty, high quality, and innovation. When designing our projects, we take care to create modern living spaces that will add comfort, privilege, and value to your life.",
+    "p2": "The most important factor for us is the absolute trust provided by the spaces where you will live with your family and loved ones. With our deep-rooted experience in the sector, we continue to give a new identity to cities by bringing environmentally friendly, sustainable, and aesthetic structures to life.",
+    "quote": "\"For peaceful tomorrows rising on solid foundations...\""
+  },
+  "Energy": {
+    "title": "Energy",
+    "bigText": "POWER",
+    "subtitle": "Sustainable and Clean Future",
+    "motto": "Environmental Awareness, Efficiency, and Innovation.",
+    "p1": "As Eser Investment Holding Inc., our fundamental policy in the energy sector is based on nature-friendly and highly efficient production. When designing our projects, we take care to use innovative technologies that will add clean energy, uninterrupted power, and economic value to your life.",
+    "p2": "The most important factor for us is leaving a more livable and cleaner world for future generations. By focusing on sustainable and renewable resources in our energy investments, we add value to the national economy and continue to build reliable, nature-compatible energy infrastructures.",
+    "quote": "\"With our endless energy for a brighter and cleaner future...\""
+  },
+  "Abouts": {
+    "title": "About Us",
+    "bigText": "VALUE",
+    "subtitle": "Deep-Rooted Past, Strong Future",
+    "motto": "Honesty, Quality, and Customer Focus.",
+    "p1": "Operating in the construction, automotive, textile, and IT sectors since 1988, Eser Investment Holding Inc. has signed many prestigious projects with its fundamental policy based on honesty and quality.",
+    "p2": "While aiming to bring modern and useful living spaces to the sector with 100% domestic capital, we adopt establishing comfortable, environmentally friendly, and safe structures with a customer-oriented service approach as an indispensable principle.",
+    "quote": "\"Standing behind every promise we make is our greatest source of pride.\""
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "subtitle": "Values We Have Built",
+    "items": {
+      "project1": "Eser Park Houses",
+      "project2": "Madnasa Turkbuku",
+      "project3": "Madnasa Summit Mansion",
+      "project4": "Sultangazi Project",
+      "project5": "Eser Park Houses 2"
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "bigText": "CONTACT",
+    "subtitle": "Get in Touch with Us",
+    "motto": "We are here for all your questions, feedback, and projects.",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "addressTitle": "Address",
+    "socialTitle": "Social Media",
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yuzyil Bagcilar / Istanbul"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "intro": "At Eser Investment Holding Inc., we place great importance on the protection of your personal data. This privacy policy explains what information is collected when you visit our website, how this information is used, and your rights.",
+    "section1Title": "1. Information Collected",
+    "section1Text": "When you visit our website, data such as your IP address, browser type, pages visited, duration of visit, and date information may be automatically collected. Additionally, you may provide personal information such as name, surname, email address, and phone number through our contact forms.",
+    "section2Title": "2. Purpose of Using Information",
+    "section2Text": "The collected data is used to provide you with better service, improve our website, respond to your requests, fulfill our legal obligations, and take security measures. Your personal data will not be used for marketing purposes without your explicit consent.",
+    "section3Title": "3. Cookies",
+    "section3Text": "Cookies are used on our website to improve user experience. Cookies are small text files placed on your device through your browser. You can reject or delete cookies from your browser settings; however, some features of our website may not function properly in this case.",
+    "section4Title": "4. Data Security",
+    "section4Text": "Appropriate technical and administrative measures are taken to ensure the security of your personal data. Your data is stored using encryption and secure server infrastructures to protect against unauthorized access, loss, or alteration.",
+    "section5Title": "5. Sharing with Third Parties",
+    "section5Text": "Your personal data may be shared with third parties only when necessary and to the extent necessary, within the scope of legal obligations and contracts with our business partners. Your data is never sold or rented for commercial purposes under any circumstances.",
+    "section6Title": "6. Changes",
+    "section6Text": "This privacy policy may be updated in line with legal regulations or changes in company policies. Updates become effective as soon as they are published on our website. Users will be informed of significant changes.",
+    "contactNote": "For questions about our privacy policy, you can reach us at info@eseryatirimholding.com."
+  },
+  "Kvkk": {
+    "title": "GDPR Information Notice",
+    "intro": "As Eser Investment Holding Inc., we would like to inform you about the processing and protection of your personal data and your rights within the scope of the Personal Data Protection Law No. 6698 (KVKK/GDPR).",
+    "section1Title": "1. Data Controller",
+    "section1Text": "Your personal data is processed by Eser Investment Holding Inc. as the data controller, in accordance with the purposes and legal reasons explained below, in compliance with the law and the principle of good faith.",
+    "section2Title": "2. Personal Data Processed",
+    "section2Text": "Personal data such as your identity information (name, surname), contact information (phone, email, address), financial information, customer transaction information, and website usage data (IP address, cookie information, log records) may be processed.",
+    "section3Title": "3. Purposes of Data Processing",
+    "section3Text": "Your personal data is processed for the purposes of providing and improving our services, conducting contractual processes, fulfilling legal obligations, ensuring customer satisfaction, evaluating your requests and complaints, conducting communication activities, and security purposes.",
+    "section4Title": "4. Transfer of Data",
+    "section4Text": "Your personal data may be transferred to authorized public institutions and organizations, our business partners, suppliers, and third parties from whom we receive services, within the framework of legal obligations and in accordance with the conditions specified in Articles 8 and 9 of the KVKK.",
+    "section5Title": "5. Data Retention Period",
+    "section5Text": "Your personal data is retained for the period required by the processing purpose and for the statute of limitations specified in the relevant legislation. Upon expiration of the retention period, your data is deleted, destroyed, or anonymized.",
+    "section6Title": "6. Your Rights",
+    "section6Text": "Pursuant to Article 11 of the KVKK, you have the rights to learn whether your personal data is processed, request information if processed, learn the purpose of processing and whether it is used in accordance with its purpose, know the third parties to whom it is transferred domestically or abroad, request correction if processed incompletely or incorrectly, request deletion or destruction, and object to the emergence of a result against you through the analysis of processed data exclusively by automated systems.",
+    "section7Title": "7. Application Method",
+    "section7Text": "To exercise your rights mentioned above, you can submit your petition specifying the necessary information to identify your identity and which of the rights specified in Article 11 of the KVKK you wish to exercise; via notary, registered mail to our company address, or to the email address info@eseryatirimholding.com.",
+    "contactNote": "For your requests within the scope of KVKK/GDPR, you can reach us at info@eseryatirimholding.com."
+  }
+}

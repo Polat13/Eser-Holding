@@ -1,0 +1,184 @@
+{
+  "Hero": {
+    "title": "Sürdürülebilir Yarınlara Doğru",
+    "description": "Eser Yatırım Holding olarak sorumluluğumuz çerçevesinde, müşteri odaklı bir yaklaşımla, bugünden çok daha iyi bir yarın oluşturmak için faaliyet gösterdiğimiz her alanda çevresel, sosyal ve ekonomik olarak sürekli iyileştirme sağlamaya zemin hazırlamaktır.",
+    "button": "Daha Fazla"
+  },
+  "Navbar": {
+  "corporate": "KURUMSAL",
+  "history": "Tarihçe",
+  "mission": "Misyon",
+  "sectors": "SEKTÖRLER",
+  "construction": "İnşaat",
+  "automotive": "Otomotiv",
+  "textile": "Tekstil",
+  "energy": "Enerji",
+  "projects": "PROJELER",
+  "vision": "VİZYON",
+  "about": "HAKKIMIZDA",
+  "contact": "Bize Ulaşın"
+},
+  "About": {
+    "title": "Holdingimiz Hakkında",
+    "description": "Eser Yatırım Holding A.Ş. olarak temel politikamız dürüstlük ve kalite esasına dayanmaktadır. Ayrıca projelerimizi tasarlarken hayatınıza; konfor, ayrıcalık ve kazanç katacak bir çok özelliğin olmasına özen gösteriyoruz. Bizim için önemli olan aileniz ve çocuklarınızla yaşayacağınız alanların güven vermesidir.",
+    "imageAlt": "Eser Yatırım Holding Hakkında Görsel"
+  },
+  "Sectors": {
+    "title": "Sektörlerimiz",
+    "items": {
+      "construction": "İnşaat",
+      "automotive": "Otomotiv",
+      "textile": "Tekstil",
+      "energy": "Enerji"
+    }
+  },
+  "Parallax": {
+    "title": "Geleceğe Daha Yakın",
+    "imageAlt": "Eser Yatırım Holding - Geleceğe Daha Yakın"
+  },
+  "Stats": {
+    "projects": "Proje",
+    "countries": "Ülke",
+    "employees": "Çalışan"
+  },
+  "Footer": {
+    "copyright": "Copyright © 2026 <company>Eser Yatırım Holding</company> Tüm Hakları Saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK",
+    "phoneTitle": "Telefon",
+    "emailTitle": "E-Posta",
+    "addressTitle": "Adres",
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yüzyıl Bağcılar / İstanbul"
+  },
+  "History": {
+    "title": "Tarihçemiz",
+    "subtitle": "Geleceği İnşa Ediyoruz",
+    "motto": "Dürüstlük, Kalite ve Güven.",
+    "p1": "Eser Yatırım Holding A.Ş. İnşaat, otomotiv, tekstil, bilişim sektörlerinde faaliyet gösteren Eser Yatırım Holding A.Ş. 1988 yılından günümüze birçok lüks konut ve iş merkezleri projelerine imza atmıştır.",
+    "p2": "Eser Yatırım Holding A.Ş. olarak temel politikamız dürüstlük ve kalite esasına dayanmaktadır. Ayrıca projelerimizi tasarlarken hayatınıza; konfor, ayrıcalık ve kazanç katacak birçok özelliğin olmasına özen gösteriyoruz. Bizim için önemli olan aileniz ve çocuklarınızla yaşayacağınız alanların güven vermesidir.",
+    "p3": "Yüzde yüz yerli sermayeyle, sektöre modern ve kullanışlı yaşam alanları kazandırmayı amaçlayan Eser Yatırım Holding A.Ş., İstanbul’da birçok prestijli projeye imza attı. Müşteri odaklı hizmet anlayışı, modern kent yaşamının beklentilerini karşılayan konforlu, çevreci, güvenli ve huzurlu yaşam alanları kurma ideali, Eser Yatırım Holding A.Ş.’nin vazgeçilmez prensipleridir.",
+    "p4": "Verdiğimiz her sözün arkasında durmak, inşa ettiğimiz tüm projelerimizi söz verdiğimiz zamanda ve söz verdiğimiz şekilde teslim etmek bizim en büyük gurur kaynağımızdır.",
+    "p5": "Kuruluşundan bugüne sürekli yenileşme ve sağlıklı büyüme prensibiyle hareket eden Eser Yatırım Holding A.Ş. ismine duyulan güveni hissetmek, her zaman en iyisini üretmek için çalışmaya ve yükselmeye devam edebilmek şirketimiz için öncelikli hedefimizdir."
+  },
+  "Mission": {
+    "title": "Misyonumuz",
+    "bigText": "ODAK",
+    "subtitle": "Geleceğe Değer Katıyoruz",
+    "motto": "Kalite, Yenilik ve Sürdürülebilirlik.",
+    "quote": "\"Bugünden çok daha iyi bir yarın oluşturmak için...\"",
+    "p1": "Eser Yatırım Holding A.Ş. Çağımızın gerektirdiği modern çalışma yöntemlerimiz, nitelikli personel seçimimiz ve eğitimlerimizle yapılan işlerin, kullanılan malzeme ve ekipmanın kalitesini pozitif bir ivmeyle sürekli geliştirerek, müşterilerimizin ihtiyaçlarını kesintisiz tespit edip, en iyi şekilde cevaplayarak, zaman ve enerjilerini asıl faaliyet alanlarına yöneltmelerine yardımcı olmak ve katkıda bulunmaktır.",
+    "p2": "Eser Yatırım Holding olarak sorumluluğumuz çerçevesinde, müşteri odaklı bir yaklaşımla, bugünden çok daha iyi bir yarın oluşturmak için faaliyet gösterdiğimiz her alanda çevresel, sosyal ve ekonomik olarak sürekli iyileştirme sağlamaya zemin hazırlamaktır."
+  },
+  "Vision": {
+    "title": "Vizyonumuz",
+    "bigText": "GELECEK",
+    "subtitle": "Yenilikçi ve Lider Yaklaşım",
+    "motto": "Sürekli Gelişim ve Mükemmeliyet.",
+    "p1": "Eser Yatırım Holding A.Ş. Çağımızın gerektirdiği modern çalışma yöntemlerimiz, nitelikli personel seçimimiz ve eğitimlerimizle yapılan işlerin, kullanılan malzeme ve ekipmanın kalitesini pozitif bir ivmeyle sürekli geliştirerek, müşterilerimizin ihtiyaçlarını kesintisiz tespit edip, en iyi şekilde cevaplayarak, zaman ve enerjilerini asıl faaliyet alanlarına yöneltmelerine yardımcı olmak ve katkıda bulunmaktır.",
+    "p2": "Eser Yatırım Holding olarak sorumluluğumuz çerçevesinde, müşteri odaklı bir yaklaşımla, bugünden çok daha iyi bir yarın oluşturmak için faaliyet gösterdiğimiz her alanda çevresel, sosyal ve ekonomik olarak sürekli iyileştirme sağlamaya zemin hazırlamaktır.",
+    "quote": "\"Sektörde öncü, gelecekte kalıcı olmak için...\""
+  },
+  "Automotive": {
+    "title": "Otomotiv",
+    "bigText": "GÜVEN",
+    "subtitle": "Yenilikçi ve Güvenli Çözümler",
+    "motto": "Konfor, Ayrıcalık ve Kalite.",
+    "p1": "Eser Yatırım Holding A.Ş. olarak temel politikamız dürüstlük ve kalite esasına dayanmaktadır. Ayrıca projelerimizi tasarlarken hayatınıza; konfor, ayrıcalık ve kazanç katacak bir çok özelliğin olmasına özen gösteriyoruz.",
+    "p2": "Bizim için önemli olan aileniz ve çocuklarınızla yaşayacağınız alanların güven vermesidir. Otomotiv sektöründeki yatırımlarımızda da bu temel prensibi koruyarak, en yüksek standartlarda hizmet sunmaya devam ediyoruz.",
+    "quote": "\"Aileniz ve çocuklarınızla güven içinde yol almanız için...\""
+  },
+  "Textile": {
+    "title": "Tekstil",
+    "bigText": "KALİTE",
+    "subtitle": "Zarafet ve Üstün Standartlar",
+    "motto": "Konfor, Ayrıcalık ve Güven.",
+    "p1": "Eser Yatırım Holding A.Ş. olarak temel politikamız dürüstlük ve kalite esasına dayanmaktadır. Ayrıca projelerimizi tasarlarken hayatınıza; konfor, ayrıcalık ve kazanç katacak bir çok özelliğin olmasına özen gösteriyoruz.",
+    "p2": "Bizim için önemli olan aileniz ve çocuklarınızla yaşayacağınız alanların güven vermesidir. Tekstil sektöründeki faaliyetlerimizde de bu yaklaşımla, en sağlıklı ve kaliteli ürünleri sunmayı hedefliyoruz.",
+    "quote": "\"Hayatınızın her anına dokunan kalite...\""
+  },
+  "Construction": {
+    "title": "İnşaat",
+    "bigText": "TEMEL",
+    "subtitle": "Modern ve Estetik Yaşam Alanları",
+    "motto": "Sağlamlık, Estetik ve Güven.",
+    "p1": "Eser Yatırım Holding A.Ş. olarak inşaat sektöründeki temel politikamız dürüstlük, yüksek kalite ve yenilikçilik esasına dayanmaktadır. Projelerimizi tasarlarken hayatınıza konfor, ayrıcalık ve değer katacak modern yaşam alanları oluşturmaya özen gösteriyoruz.",
+    "p2": "Bizim için en önemli unsur, aileniz ve sevdiklerinizle birlikte yaşayacağınız alanların mutlak bir güven vermesidir. Sektördeki köklü tecrübemizle, çevreye duyarlı, sürdürülebilir ve estetik yapıları hayata geçirerek şehirlere yeni bir kimlik kazandırmaya devam ediyoruz.",
+    "quote": "\"Sağlam temeller üzerinde yükselen, huzur dolu yarınlar için...\""
+  },
+  "Energy": {
+    "title": "Enerji",
+    "bigText": "GÜÇ",
+    "subtitle": "Sürdürülebilir ve Temiz Gelecek",
+    "motto": "Çevreye Duyarlılık, Verimlilik ve Yenilik.",
+    "p1": "Eser Yatırım Holding A.Ş. olarak enerji sektöründeki temel politikamız, doğaya saygılı ve yüksek verimli üretim esasına dayanmaktadır. Projelerimizi tasarlarken hayatınıza; temiz enerji, kesintisiz güç ve ekonomik kazanç katacak yenilikçi teknolojilerin kullanılmasına özen gösteriyoruz.",
+    "p2": "Bizim için en önemli unsur, gelecek nesillere daha yaşanabilir ve temiz bir dünya bırakmaktır. Enerji yatırımlarımızda sürdürülebilir ve yenilenebilir kaynaklara odaklanarak, hem ülke ekonomisine değer katıyor hem de doğayla tam uyumlu, güvenilir enerji altyapıları kurmaya devam ediyoruz.",
+    "quote": "\"Daha aydınlık ve temiz bir gelecek için bitmeyen enerjimizle...\""
+  },
+  "Abouts": {
+    "title": "Hakkımızda",
+    "bigText": "DEĞER",
+    "subtitle": "Köklü Geçmiş, Güçlü Gelecek",
+    "motto": "Dürüstlük, Kalite ve Müşteri Odaklılık.",
+    "p1": "1988 yılından günümüze inşaat, otomotiv, tekstil ve bilişim sektörlerinde faaliyet gösteren Eser Yatırım Holding A.Ş., dürüstlük ve kalite esasına dayanan temel politikasıyla birçok prestijli projeye imza atmıştır.",
+    "p2": "Yüzde yüz yerli sermayeyle, sektöre modern ve kullanışlı yaşam alanları kazandırmayı amaçlarken, müşteri odaklı hizmet anlayışımızla konforlu, çevreci ve güvenli yapılar kurmayı vazgeçilmez bir prensip olarak benimsiyoruz.",
+    "quote": "\"Verdiğimiz her sözün arkasında durmak en büyük gurur kaynağımızdır.\""
+  },
+  "Projects": {
+    "title": "Projelerimiz",
+    "subtitle": "İmza Attığımız Değerler",
+    "items": {
+      "project1": "Eser Park Evleri",
+      "project2": "Madnasa Türkbükü",
+      "project3": "Madnasa Zirve Malikane",
+      "project4": "Sultangazi Projesi",
+      "project5": "Eser Park Evleri 2"
+    }
+  },
+  "Contact": {
+    "title": "Bize Ulaşın",
+    "bigText": "İLETİŞİM",
+    "subtitle": "Bizimle İletişime Geçin",
+    "motto": "Her türlü soru, görüş ve projeniz için buradayız.",
+    "phoneTitle": "Telefon",
+    "emailTitle": "E-Posta",
+    "addressTitle": "Adres",
+    "socialTitle": "Sosyal Medya",
+    "addressText": "Oto Center Galericiler Sitesi P Blok No:28 Yüzyıl Bağcılar / İstanbul"
+  },
+  "Privacy": {
+    "title": "Gizlilik Politikası",
+    "intro": "Eser Yatırım Holding A.Ş. olarak kişisel verilerinizin korunmasına büyük önem veriyoruz. Bu gizlilik politikası, web sitemizi ziyaret ettiğinizde hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve haklarınızı açıklamaktadır.",
+    "section1Title": "1. Toplanan Bilgiler",
+    "section1Text": "Web sitemizi ziyaret ettiğinizde; IP adresiniz, tarayıcı türü, ziyaret edilen sayfalar, ziyaret süresi ve tarih bilgileri gibi veriler otomatik olarak toplanabilir. Bunun yanı sıra iletişim formlarımız aracılığıyla ad, soyad, e-posta adresi, telefon numarası gibi kişisel bilgilerinizi de bize iletebilirsiniz.",
+    "section2Title": "2. Bilgilerin Kullanım Amacı",
+    "section2Text": "Toplanan veriler; size daha iyi hizmet sunmak, web sitemizi geliştirmek, taleplerinize yanıt vermek, yasal yükümlülüklerimizi yerine getirmek ve güvenlik önlemleri almak amacıyla kullanılmaktadır. Kişisel verileriniz, açık rızanız olmadan pazarlama amaçlı kullanılmaz.",
+    "section3Title": "3. Çerezler (Cookies)",
+    "section3Text": "Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanılmaktadır. Çerezler, tarayıcınız aracılığıyla cihazınıza yerleştirilen küçük metin dosyalarıdır. Tarayıcı ayarlarınızdan çerezleri reddedebilir veya silebilirsiniz; ancak bu durumda web sitemizin bazı özellikleri düzgün çalışmayabilir.",
+    "section4Title": "4. Veri Güvenliği",
+    "section4Text": "Kişisel verilerinizin güvenliğini sağlamak için uygun teknik ve idari tedbirler alınmaktadır. Verileriniz, yetkisiz erişim, kayıp veya değişikliğe karşı korunmak amacıyla şifreleme ve güvenli sunucu altyapıları kullanılarak saklanmaktadır.",
+    "section5Title": "5. Üçüncü Taraflarla Paylaşım",
+    "section5Text": "Kişisel verileriniz, yasal zorunluluklar ve iş ortaklarımızla yapılan sözleşmeler kapsamında, yalnızca gerekli hallerde ve gerekli ölçüde üçüncü taraflarla paylaşılabilir. Verileriniz hiçbir koşulda ticari amaçla satılmaz veya kiralanmaz.",
+    "section6Title": "6. Değişiklikler",
+    "section6Text": "Bu gizlilik politikası, yasal düzenlemeler veya şirket politikalarındaki değişiklikler doğrultusunda güncellenebilir. Güncellemeler web sitemizde yayınlandığı anda geçerli olur. Önemli değişikliklerde kullanıcılarımız bilgilendirilecektir.",
+    "contactNote": "Gizlilik politikamız hakkında sorularınız için info@eseryatirimholding.com adresinden bize ulaşabilirsiniz."
+  },
+  "Kvkk": {
+    "title": "KVKK Aydınlatma Metni",
+    "intro": "Eser Yatırım Holding A.Ş. olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında kişisel verilerinizin işlenmesi, korunması ve haklarınız konusunda sizi bilgilendirmek isteriz.",
+    "section1Title": "1. Veri Sorumlusu",
+    "section1Text": "Kişisel verileriniz, veri sorumlusu sıfatıyla Eser Yatırım Holding A.Ş. tarafından aşağıda açıklanan amaçlar ve hukuki sebepler doğrultusunda, hukuka ve dürüstlük kuralına uygun olarak işlenmektedir.",
+    "section2Title": "2. İşlenen Kişisel Veriler",
+    "section2Text": "Kimlik bilgileriniz (ad, soyad), iletişim bilgileriniz (telefon, e-posta, adres), finansal bilgileriniz, müşteri işlem bilgileriniz ve web sitesi kullanım verileriniz (IP adresi, çerez bilgileri, log kayıtları) gibi kişisel verileriniz işlenebilmektedir.",
+    "section3Title": "3. Verilerin İşlenme Amaçları",
+    "section3Text": "Kişisel verileriniz; hizmetlerimizin sunulması ve geliştirilmesi, sözleşme süreçlerinin yürütülmesi, yasal yükümlülüklerin yerine getirilmesi, müşteri memnuniyetinin sağlanması, talep ve şikâyetlerinizin değerlendirilmesi, iletişim faaliyetlerinin yürütülmesi ve güvenlik amacıyla işlenmektedir.",
+    "section4Title": "4. Verilerin Aktarılması",
+    "section4Text": "Kişisel verileriniz, kanuni yükümlülükler çerçevesinde yetkili kamu kurum ve kuruluşlarına, iş ortaklarımıza, tedarikçilerimize ve hizmet aldığımız üçüncü kişilere, KVKK'nın 8. ve 9. maddelerinde belirtilen şartlara uygun olarak aktarılabilmektedir.",
+    "section5Title": "5. Veri Saklama Süresi",
+    "section5Text": "Kişisel verileriniz, işleme amacının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen zamanaşımı süreleri boyunca saklanmaktadır. Saklama süresinin sona ermesiyle birlikte verileriniz silinir, yok edilir veya anonim hale getirilir.",
+    "section6Title": "6. Haklarınız",
+    "section6Text": "KVKK'nın 11. maddesi gereğince; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmiş olması halinde düzeltilmesini isteme, silinmesini veya yok edilmesini isteme ve işlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme haklarına sahipsiniz.",
+    "section7Title": "7. Başvuru Yöntemi",
+    "section7Text": "Yukarıda belirtilen haklarınızı kullanmak için kimliğinizi tespit edici gerekli bilgiler ile KVKK'nın 11. maddesinde belirtilen haklardan hangisini kullanmaya ilişkin olduğunu belirten dilekçenizi; noter aracılığıyla, iadeli taahhütlü posta ile şirketimiz adresine veya info@eseryatirimholding.com e-posta adresine iletebilirsiniz.",
+    "contactNote": "KVKK kapsamındaki talepleriniz için info@eseryatirimholding.com adresinden bize ulaşabilirsiniz."
+  }
+}

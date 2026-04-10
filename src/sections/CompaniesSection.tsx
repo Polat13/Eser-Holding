@@ -1,46 +1,64 @@
-import Image from "next/image"; // Next.js resim optimizasyon kütüphanesi
+"use client";
+
+import { useEffect } from "react";
+import Image from "next/image"; 
+import { useTranslations } from "next-intl";
+import { fadeUp } from "@/animations/fadeUp"; // Kendi dosya yoluna göre ayarla!
 
 export default function CompaniesSection() {
+  const t = useTranslations("Sectors");
+
+  // 1. Enerji sektörünü diziye ekledik
   const sectors = [
     { 
-      name: "İnşaat", 
-      // public/images klasöründeki lokal resmin yolu
+      key: "construction", 
       img: "/images/insaat.jpg" 
     },
     { 
-      name: "Otomotiv", 
+      key: "automotive", 
       img: "/images/otomotiv.jpg" 
     },
     { 
-      name: "Tekstil", 
+      key: "textile", 
       img: "/images/tekstil.jpg" 
+    },
+    { 
+      key: "energy", 
+      img: "/images/enerji.jpg" // Yeni görsel
     }
   ];
+
+  useEffect(() => {
+    const ctx = fadeUp(".animate-container"); 
+    return () => ctx.revert();
+  }, [t]); 
     
   return (
     <section className="w-full py-32 bg-white">
-      <div className="container-custom flex flex-col gap-16">
+      <div className="animate-container container-custom flex flex-col gap-16">
         
         <h2 className="text-4xl font-semibold text-[#1E3A8A]">
-          Sektörlerimiz
+          {t("title")}
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-10">
+        {/* 2. Grid yapısını 4 kolonlu olacak şekilde değiştirdik */}
+        {/* Mobilde 1 (varsayılan), Tablette 2 (md), Masaüstünde 4 (lg) kolon */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {sectors.map((item, index) => (
-            <div key={index} className="relative group h-[340px] overflow-hidden rounded-lg cursor-pointer bg-slate-100">
+            <div key={index} className="relative group h-[340px] overflow-hidden rounded-lg cursor-pointer bg-slate-100 shadow-sm hover:shadow-xl transition-shadow duration-300">
               
-              {/* Eski <img> yerine Yeni Next.js <Image> bileşeni */}
               <Image 
                 src={item.img} 
-                alt={item.name}
-                fill /* Div'in içini tamamen kaplaması için */
-                sizes="(max-width: 768px) 100vw, 33vw" /* Performans için ekran boyutuna göre resim çeker */
+                alt={t(`items.${item.key}`)} 
+                fill 
+                // 3. 4 kolonlu yapıya göre (yaklaşık %25 genişlik) optimize edildi
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" 
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6 z-10">
                 <h3 className="text-2xl font-medium text-white group-hover:-translate-y-2 transition-transform duration-300">
-                  {item.name}
+                  {t(`items.${item.key}`)}
                 </h3>
               </div>
               
