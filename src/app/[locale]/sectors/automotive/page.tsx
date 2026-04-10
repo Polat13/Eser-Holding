@@ -7,12 +7,39 @@ import { SiAudi, SiBmw, SiVolvo, SiFord } from "react-icons/si";
 import { TbBrandMercedes } from "react-icons/tb";
 import { fadeUp } from "@/animations/fadeUp"; // Animasyon dosyanın yolunu kontrol et
 
+// --- YENİ: YBA AUTO BODRUM SVG İKONU ---
+// Diğer ikonlarla kusursuz uyum sağlaması için özel kodlanmış flat (düz) vektör
+const YbaIcon = ({ className = "" }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 200 200" 
+    fill="currentColor" 
+    // Diğer ikonlarla aynı boyutta durması için w ve h ayarlandı
+    className={`w-[1.5em] h-[1.5em] ${className}`}
+  >
+    <g textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
+      {/* Şık bir üst çizgi */}
+      <rect x="60" y="40" width="80" height="4" rx="2" />
+      {/* YBA Monogramı */}
+      <text x="100" y="115" fontSize="80" fontWeight="900" letterSpacing="-2">YBA</text>
+      {/* Alt Yazı */}
+      <text x="100" y="150" fontSize="20" fontWeight="800" letterSpacing="1">AUTO BODRUM</text>
+      {/* Şık bir alt çizgi */}
+      <rect x="40" y="170" width="120" height="4" rx="2" />
+    </g>
+  </svg>
+);
+
 // Kod tekrarını önlemek ve şeridi uzatmak için markaları bir bileşen yaptık
 const BrandIcons = () => (
   <>
     <TbBrandMercedes className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
     <SiAudi className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
     <SiBmw className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    
+    {/* Özel SVG Logomuz burada çalışıyor! */}
+    <YbaIcon className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
+    
     <SiVolvo className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
     <SiFord className="shrink-0 hover:text-gray-300 transition-colors cursor-pointer" />
   </>
@@ -52,13 +79,12 @@ export default function AutomotivePage() {
 
         {/* LOGO BANDI (KUSURSUZ AKAN MARQUEE) */}
         <div className="absolute bottom-6 left-1/2 z-10 w-full max-w-5xl -translate-x-1/2 px-4 overflow-hidden">
-          {/* Siyah kapsayıcı kutu (overflow-hidden burada çalışır, logolar bu sınırda kaybolur) */}
-          <div className="mx-auto flex h-[64px] items-center  text-white text-4xl  overflow-hidden">
+          {/* Siyah kapsayıcı kutu (Silinen UI tasarımı düzeltildi!) */}
+          <div className="mx-auto flex h-[72px] items-center text-white text-4xl overflow-hidden">
             
             <div className="marquee flex items-center">
               
               {/* 1. SET: Şeridi siyahlıktan çok daha uzun yapmak için ikon setini 3 kez yan yana koyduk */}
-              {/* Uyarı: gap (boşluk) ve pr (sağ boşluk) değerleri zıplama olmaması için BİREBİR AYNI olmalıdır! */}
               <div className="flex items-center gap-20 md:gap-32 pr-20 md:pr-32">
                 <BrandIcons />
                 <BrandIcons />
@@ -132,7 +158,7 @@ export default function AutomotivePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
                 <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
                   <Image
-                    src="/images/araba1.jpg"
+                    src="/images/arab1.jpg"
                     alt="Araba 1"
                     fill
                     className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
@@ -141,7 +167,7 @@ export default function AutomotivePage() {
                 </div>
                 <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
                   <Image
-                    src="/images/araba2.jpg"
+                    src="/images/arab2.jpg"
                     alt="Araba 2"
                     fill
                     className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
@@ -150,7 +176,7 @@ export default function AutomotivePage() {
                 </div>
                 <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
                   <Image
-                    src="/images/araba3.jpg"
+                    src="/images/arab3.jpg"
                     alt="Araba 3"
                     fill
                     className="object-cover object-bottom group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
