@@ -70,6 +70,35 @@ export default function TextilePage() {
                 {t("p2")}
               </p>
 
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+                              <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                                <Image
+                                  src="/images/tekstil1.jpg"
+                                  alt="Tekstil 1"
+                                  fill
+                                  className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                                  quality={90}
+                                />
+                              </div>
+                              <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                                <Image
+                                  src="/images/tekstil2.jpg"
+                                  alt="Tekstil 2"
+                                  fill
+                                  className="object-cover group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                                  quality={90}
+                                />
+                              </div>
+                              <div className="relative overflow-hidden rounded-2xl h-56 group cursor-pointer">
+                                <Image
+                                  src="/images/tekstil3.jpg"
+                                  alt="Tekstil 3"
+                                  fill
+                                  className="object-cover object-bottom group-hover:scale-105 group-hover:-translate-y-1 transition-transform duration-500"
+                                  quality={90}
+                                />
+                              </div>
+                            </div>
               {/* Vurucu Kapanış Kutusu */}
               <div className="p-8 bg-slate-50 rounded-2xl border border-gray-100 shadow-sm mt-4">
                 <p className="italic text-gray-800 font-medium text-center">
