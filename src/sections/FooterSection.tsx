@@ -116,10 +116,6 @@ export default function FooterSection() {
 
           {/* Orta - Sosyal Medya Butonları */}
           <div className="flex items-center gap-4">
-            <a href="https://www.youtube.com/watch?v=xQsqBCyWNVc" target="_blank" rel="noopener noreferrer" 
-               className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
-              <YoutubeIcon className="text-gray-400 hover:text-white" />
-            </a>
             <a href="https://x.com/EserHolding" target="_blank" rel="noopener noreferrer" 
                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
               <TwitterIcon className="text-gray-400 hover:text-white" />

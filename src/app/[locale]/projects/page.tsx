@@ -11,10 +11,22 @@ export default function ProjectsPage() {
   // Projelerin listesi (Görsel ve JSON anahtarları ile eşleştirildi)
   const projects = [
     { key: "project1", img: "/images/proje1.jpg" },
-    { key: "project2", img: "/images/proje2.jpg" },
-    { key: "project3", img: "/images/proje3.jpg" },
+     { key: "project1", img: "/images/eserparkevleri1.jpeg" },
+     { key: "project3", img: "/images/eserrezidans1.jpeg" },
+     { key: "project3", img: "/images/eserrezidans2.jpeg" },
+     { key: "project5", img: "/images/bahceliyasamevleri1.jpeg" },
+     { key: "project5", img: "/images/bahceliyasamevleri2.jpeg" },
     { key: "project4", img: "/images/proje4.jpg" },
-    { key: "project5", img: "/images/proje5.jpg" },
+    { key: "project6", img: "/images/nisantasibayrakkonaklari1.jpeg" },
+    { key: "project7", img: "/images/eyupsultan1.jpeg" },
+    { key: "project2", img: "/images/proje2.jpg" },
+    { key: "project8", img: "/images/türkbüküzirve1.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve2.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve3.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve4.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve5.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve6.jpeg" },
+    { key: "project8", img: "/images/türkbüküzirve7.jpeg" },
   ];
 
   useEffect(() => {
