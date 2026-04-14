@@ -1,30 +1,107 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
-import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { fadeUp } from "@/animations/fadeUp";
-import Lenis from "@studio-freight/lenis";
+
+const ProjectLiveCard = ({
+  images,
+  title,
+}: {
+  images: string[];
+  title: string;
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(0);
+  const [interactionTime, setInteractionTime] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => {
+        setPrevIndex(prev);
+        return (prev + 1) % images.length;
+      });
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length, interactionTime]);
+
+  return (
+    <div className="relative group h-[380px] md:h-[420px] overflow-hidden rounded-xl cursor-pointer bg-slate-900 shadow-sm hover:shadow-2xl transition-all duration-500">
+      {images.map((img, idx) => {
+        let imageClasses = "opacity-0 -z-10 scale-100";
+        if (idx === currentIndex) {
+          imageClasses = "opacity-100 z-10 scale-105";
+        } else if (idx === prevIndex) {
+          imageClasses = "opacity-100 z-0 scale-105";
+        }
+
+        return (
+          <Image
+            key={idx}
+            src={img}
+            alt={`${title} - ${idx + 1}`}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className={`object-cover transition-all duration-1000 ease-in-out group-hover:scale-110 ${imageClasses}`}
+          />
+        );
+      })}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#030625]/90 via-[#030625]/20 to-transparent flex items-end p-8 z-20 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="flex flex-col gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full">
+          <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase">
+            Eser Yatırım Holding
+          </span>
+          <h3 className="text-2xl md:text-3xl font-medium text-white mb-2">
+            {title}
+          </h3>
+
+          {/* Noktalar */}
+          {images.length > 1 && (
+            <div className="flex items-center gap-1.5 -ml-2">
+              {images.map((_, idx) => (
+                <div
+                  key={idx}
+                  className="relative flex items-center justify-center p-2 cursor-pointer group/dot"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (idx === currentIndex) return;
+                    setPrevIndex(currentIndex);
+                    setCurrentIndex(idx);
+                    setInteractionTime(Date.now());
+                  }}
+                >
+                  <div
+                    className={`rounded-full transition-all duration-300 ${idx === currentIndex
+                      ? "w-2 h-2 bg-white"
+                      : "w-1.5 h-1.5 bg-white/50 group-hover/dot:bg-white/80"
+                      }`}
+                  />
+                  {idx === currentIndex && (
+                    <div className="absolute w-4 h-4 rounded-full border-[1.5px] border-white/60"></div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function ProjectsPage() {
   const t = useTranslations("Projects");
-  const [galleryOpen, setGalleryOpen] = useState<string | null>(null);
-  const modalScrollRef = useRef<HTMLDivElement>(null);
 
-  // Tek görselli projeler
-  const singleProjects = [
-    { key: "project1", img: "/images/eserparkevleri1.jpeg" },
-    { key: "project3", img: "/images/eserrezidans2.jpeg" },
-    { key: "project5", img: "/images/bahceliyasamevleri1.jpeg" },
-    { key: "project5", img: "/images/bahceliyasamevleri2.jpeg" },
-    { key: "project4", img: "/images/proje4.jpg" },
-    { key: "project6", img: "/images/nisantasibayrakkonaklari1.jpeg" },
-    { key: "project7", img: "/images/eyupsultan1.jpeg" },
-  ];
-
-  // Çoklu görselli projeler (galeri açılacak)
+  // Çoklu görselli projeler (Galeri)
   const galleryProjects: Record<string, string[]> = {
+    project5: [
+      "/images/bahceliyasamevleri1.jpeg",
+      "/images/bahceliyasamevleri2.jpeg",
+    ],
     project2: [
       "/images/proje2.jpg",
       "/images/türkbüküzirve5.jpeg",
@@ -39,120 +116,26 @@ export default function ProjectsPage() {
     ],
   };
 
-  // Tüm kartları sıralı şekilde birleştir (orijinal sırayı koru)
   type ProjectItem =
     | { type: "single"; key: string; img: string }
     | { type: "gallery"; key: string };
 
+  // Tüm projeler ekrana basılma sırasına göre dizildi
   const allProjects: ProjectItem[] = [
-    ...singleProjects.map((p) => ({ type: "single" as const, ...p })),
+    { type: "single", key: "project1", img: "/images/eserparkevleri1.jpeg" },
+    { type: "single", key: "project3", img: "/images/eserrezidans2.jpeg" },
+    { type: "gallery", key: "project5" },
+    { type: "single", key: "project4", img: "/images/proje4.jpg" },
+    { type: "single", key: "project6", img: "/images/nisantasibayrakkonaklari1.jpeg" },
+    { type: "single", key: "project7", img: "/images/eyupsultan1.jpeg" },
     { type: "gallery", key: "project2" },
     { type: "gallery", key: "project8" },
   ];
-
-  // ESC ile modal kapat
-  const handleKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === "Escape") setGalleryOpen(null);
-    },
-    []
-  );
-
-  useEffect(() => {
-    const globalLenis = (window as any).lenis;
-    let localLenis: Lenis | null = null;
-    let rafId: number;
-
-    if (galleryOpen) {
-      document.documentElement.style.overflow = "hidden";
-      document.body.style.overflow = "hidden";
-      if (globalLenis) globalLenis.stop();
-      window.addEventListener("keydown", handleKeyDown);
-
-      // DOM'un render olmasını bekleyip local Lenis başlatıyoruz
-      requestAnimationFrame(() => {
-        if (modalScrollRef.current) {
-          localLenis = new Lenis({
-            wrapper: modalScrollRef.current,
-            content: modalScrollRef.current.firstElementChild as HTMLElement,
-            duration: 1.5,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            lerp: 0.05,
-            wheelMultiplier: 1,
-            smoothWheel: true,
-          });
-
-          const raf = (time: number) => {
-            localLenis?.raf(time);
-            rafId = requestAnimationFrame(raf);
-          };
-          rafId = requestAnimationFrame(raf);
-        }
-      });
-    } else {
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
-      if (globalLenis) globalLenis.start();
-    }
-
-    return () => {
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
-      if (globalLenis) globalLenis.start();
-      if (localLenis) {
-        localLenis.destroy();
-      }
-      cancelAnimationFrame(rafId);
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [galleryOpen, handleKeyDown]);
 
   useEffect(() => {
     const ctx = fadeUp(".animate-projects");
     return () => ctx.revert();
   }, [t]);
-
-  // Kart render fonksiyonu (hem grid hem modal içinde kullanılır)
-  const renderCard = (
-    img: string,
-    projectKey: string,
-    index: number,
-    onClick?: () => void
-  ) => (
-    <div
-      key={`${projectKey}-${index}`}
-      className="relative group h-[380px] md:h-[420px] overflow-hidden rounded-xl cursor-pointer bg-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500"
-      onClick={onClick}
-    >
-      <Image
-        src={img}
-        alt={t(`items.${projectKey}`)}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030625]/90 via-[#030625]/20 to-transparent flex items-end p-8 z-10 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
-        <div className="flex flex-col gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase">
-            Eser Yatırım Holding
-          </span>
-          <h3 className="text-2xl md:text-3xl font-medium text-white">
-            {t(`items.${projectKey}`)}
-          </h3>
-        </div>
-      </div>
-
-      {/* Galeri projelerinde fotoğraf sayısı rozeti */}
-      {onClick && (
-        <div className="absolute top-4 right-4 z-20 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          {galleryProjects[projectKey].length}
-        </div>
-      )}
-    </div>
-  );
 
   return (
     <main className="min-h-screen bg-white">
@@ -189,68 +172,30 @@ export default function ProjectsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {allProjects.map((item, index) => {
+              const title = t(`items.${item.key}`);
+
               if (item.type === "single") {
-                return renderCard(item.img, item.key, index);
+                return (
+                  <ProjectLiveCard
+                    key={`${item.key}-${index}`}
+                    images={[item.img]}
+                    title={title}
+                  />
+                );
               }
-              // Galeri projesi: sadece ilk görseli göster, tıklayınca galeri aç
+
               const images = galleryProjects[item.key];
-              return renderCard(images[0], item.key, index, () =>
-                setGalleryOpen(item.key)
+              return (
+                <ProjectLiveCard
+                  key={`${item.key}-${index}`}
+                  images={images}
+                  title={title}
+                />
               );
             })}
           </div>
         </div>
       </section>
-
-      {/* 3. GALERİ MODAL (Portal ile body'ye render edilir) */}
-      {galleryOpen && createPortal(
-        <>
-          {/* Arka plan overlay */}
-          <div
-            className="fixed inset-0 z-[9998] bg-black/50 backdrop-blur-md"
-            onClick={() => setGalleryOpen(null)}
-          />
-
-          {/* Kapat Butonu - Daha büyük z-index ve padding ile */}
-          <button
-            className="fixed top-4 right-4 md:top-8 md:right-8 z-[10000] bg-white/20 hover:bg-white/30 backdrop-blur-xl text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 shadow-2xl cursor-pointer pointer-events-auto"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setGalleryOpen(null);
-            }}
-            aria-label="Kapat"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          {/* Kaydırılabilir içerik katmanı */}
-          <div
-            ref={modalScrollRef}
-            className="fixed inset-0 z-[9999] overflow-y-auto overscroll-contain pointer-events-auto"
-            onClick={() => setGalleryOpen(null)}
-            data-lenis-prevent="true"
-            onTouchMove={(e) => e.stopPropagation()}
-          >
-            <div
-              className="w-full max-w-7xl mx-auto px-4 pt-24 pb-20 md:py-20"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 text-center tracking-tight drop-shadow-lg">
-                {t(`items.${galleryOpen}`)}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                {galleryProjects[galleryOpen].map((img, i) =>
-                  renderCard(img, galleryOpen, i)
-                )}
-              </div>
-            </div>
-          </div>
-        </>,
-        document.body
-      )}
     </main>
   );
 }
