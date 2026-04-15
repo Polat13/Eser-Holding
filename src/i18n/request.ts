@@ -1,5 +1,7 @@
 import { getRequestConfig } from 'next-intl/server';
 
+export const runtime = 'edge';
+
 export default getRequestConfig(async ({ requestLocale }) => {
   // 1. Yeni sürümde requestLocale asenkron bir işlemdir, bu yüzden 'await' ile bekliyoruz
   let locale = await requestLocale;

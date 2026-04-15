@@ -116,7 +116,7 @@ export default function Navbar() {
                   onMouseEnter={() => link.hasSub && setActiveDropdown(link.id)}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  
+
                   {/* SİHİRLİ DOKUNUŞ: Alt menüsü olanları Link yerine span yapıyoruz */}
                   {link.hasSub ? (
                     <span className="flex items-center gap-1 hover:text-gray-300 transition-colors py-2 cursor-pointer">

@@ -1,5 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 
+export const runtime = 'edge';
+
 // next-intl'in createMiddleware fonksiyonu bir middleware/proxy handler döndürür
 // Next.js 16'da hem default export hem de named "proxy" export desteklenir
 const handler = createMiddleware({
