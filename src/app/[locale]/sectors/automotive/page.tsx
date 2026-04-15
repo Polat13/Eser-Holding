@@ -183,44 +183,53 @@ export default function AutomotivePage() {
                 </p>
               </div>
 
-              {/* Sosyal Medya & İletişim İkonları */}
-              <div className="flex items-center justify-center gap-6 mt-8">
-                {/* Sahibinden */}
-                <a
-                  href="https://ybautobodrum.sahibinden.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 bg-yellow-400 text-black rounded-xl flex items-center justify-center hover:bg-yellow-500 transition-colors shadow-sm"
-                  title="Sahibinden İlanlarımız"
-                >
-                  <span className="text-[28px] font-black leading-none">S</span>
-                </a>
+              {/* Sosyal Medya İkonları */}
+              <div className="flex flex-wrap items-center justify-center gap-10 mt-8">
+                {/* Sahibinden - Site 1 */}
+                <div className="flex flex-col items-center gap-3 group">
+                  <a
+                    href="https://ybautobodrum.sahibinden.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 bg-gray-50 text-gray-400 rounded-full border border-gray-100 flex items-center justify-center group-hover:bg-gray-100 group-hover:text-gray-700 transition-all shadow-sm"
+                    title="Sahibinden İlanlarımız - Site 1"
+                  >
+                    <span className="text-[28px] font-black leading-none">S</span>
+                  </a>
+                  <span className="text-xs text-gray-400 font-medium tracking-wide uppercase">Site 1</span>
+                </div>
+
+                {/* Sahibinden - Site 2 */}
+                <div className="flex flex-col items-center gap-3 group">
+                  <a
+                    href="https://eserkentselotomotiv.sahibinden.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 bg-gray-50 text-gray-400 rounded-full border border-gray-100 flex items-center justify-center group-hover:bg-gray-100 group-hover:text-gray-700 transition-all shadow-sm"
+                    title="Sahibinden İlanlarımız - Site 2"
+                  >
+                    <span className="text-[28px] font-black leading-none">S</span>
+                  </a>
+                  <span className="text-xs text-gray-400 font-medium tracking-wide uppercase">Site 2</span>
+                </div>
 
                 {/* Instagram */}
-                <a
-                  href="https://www.instagram.com/ybautobodrum?igsh=MTExeWx1eGY5MXlmag%3D%3D&utm_source=qr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white rounded-xl flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm"
-                  title="Instagram Hesabımız"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-
-                {/* Telefon */}
-                <a
-                  href="tel:+902126731166"
-                  className="w-14 h-14 bg-blue-500 text-white rounded-xl flex items-center justify-center hover:bg-blue-600 transition-colors shadow-sm"
-                  title="Bizi Arayın"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                </a>
+                <div className="flex flex-col items-center gap-3 group">
+                  <a
+                    href="https://www.instagram.com/ybautobodrum?igsh=MTExeWx1eGY5MXlmag%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 bg-gray-50 text-gray-400 rounded-full border border-gray-100 flex items-center justify-center group-hover:bg-gray-100 group-hover:text-gray-700 transition-all shadow-sm"
+                    title="Instagram Hesabımız"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <span className="text-xs text-gray-400 font-medium tracking-wide uppercase">Instagram</span>
+                </div>
               </div>
 
             </div>
