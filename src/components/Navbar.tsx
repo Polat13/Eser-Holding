@@ -138,7 +138,6 @@ export default function Navbar() {
                           className="px-4 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-blue-600 transition-colors border-b border-gray-50 last:border-none flex items-center justify-between"
                         >
                           <span>{sub.name}</span>
-                          <span className="text-sm text-gray-500">{t("explore")}</span>
                         </Link>
                       ))}
                     </div>
@@ -228,7 +227,6 @@ export default function Navbar() {
                           className="text-lg sm:text-xl text-gray-300 font-medium hover:text-white hover:translate-x-2 transition-all flex items-center justify-between"
                         >
                           <span>{sub.name}</span>
-                          <span className="text-base text-gray-400">{t("explore")}</span>
                         </Link>
                       ))}
                     </div>
